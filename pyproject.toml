@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "smsp-example"
+version = "0.1.0"
+description = ""
+authors = ["pshiko <pshiko.sparrow@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.10"
+ortools = "^9.3.10497"
+pandas = "^1.4.2"
+seaborn = "^0.11.2"
+tqdm = "^4.64.0"
+
+[tool.poetry.dev-dependencies]
+maturin = "^0.12.14"
+pytest = "^7.1.2"
+
+[build-system]
+requires = ["maturin>=0.12,<0.13", "poetry-core>=1.0.0"]
+build-backend = "maturin"
+
+[project]
+name = "smsp-example-dp"
+requires-python = ">=3.8,<3.10"
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+
